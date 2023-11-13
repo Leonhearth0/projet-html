@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mainp2.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../assets/images/my_logo.webp" alt="Logo du site">
+        <nav id="nav_bar">
+            <ul>
+                <li class="onglet_basic"><a href="/index.html">Accueil</a></li>
+                <!-- class="onglet_basic_active" a changer à chaque page-->
+                <li class="onglet_basic_active"><a href="./2HTMLExplique.html">HTML</a></li>
+                <li class="onglet_basic"><a href="./3CSSExplique.html">CSS</a></li>
+                <li class="onglet_basic"><a href="./4JSPHP.html">JS & PHP</a></li>
+                <li class="onglet_basic"><a href="./5Contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Introduction à HTML</h1>
+            <div>
+                <img src="../assets/images/html_logo.png" alt="Logo HTML">
+            </div>
+            <p>L'un des principaux buts de HTML est de structurer du texte et lui donner du sens (ce que l'on appelle la
+                sémantique) afin que le navigateur puisse l'afficher correctement. Cet article explique comment HTML
+                peut être utilisé pour structurer une page en ajoutant des titres et des paragraphes, en marquant des
+                emphases, en créant des listes, et bien plus encore.</p>
+        </section>
+        <section class="language_HTML_tags">
+            <h2>Balises HTML couramment utilisées</h2>
+            <div><img src="../assets/images/html_tags.jpg" alt="Stylised HTLM Tags picture">
+                <ul>
+                    <li>&lt;h1&gt; - &lt;h6&gt; : Les balises de titre</li>
+                    <li>&lt;p&gt; : Les paragraphes</li>
+                    <li>&lt;a&gt; : Les liens</li>
+                    <li>&lt;img&gt; : Les images</li>
+                    <li>&lt;ul&gt; et &lt;li&gt; : Les listes</li>
+                    <li>&lt;table&gt;, &lt;tr&gt;, &lt;th&gt; et &lt;td&gt; : Les tableaux</li>
+                    <li>&lt;form&gt;, &lt;input&gt; et &lt;button&gt; : Les formulaires</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Exemple d'utilisation de balises HTML</h2>
+            <p>Voici un exemple de code HTML qui utilise certaines des balises mentionnées ci-dessus :</p>
+            <!-- &lt; = plus que (less than) &gt; = moins que (greater than) -->
+            <table>
+                <tr>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;Titre de la page&lt;/title&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/head&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;Titre principal&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;Ceci est un paragraphe.&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a href="https://www.example.com"&gt;Lien vers example.com&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="image.jpg" alt="Description de l'image"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;Premier élément de liste&lt;/li&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;Deuxième élément de liste&lt;/li&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;Troisième élément de liste&lt;/li&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;Entête de colonne 1&lt;/th&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;Entête de colonne 2&lt;/th&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;Donnée de la colonne 1, ligne 1&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;Donnée de la colonne 2, ligne 1&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;Donnée de la colonne 1, ligne 2&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;Donnée de la colonne 2, ligne 2&lt;/td&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/tr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;label for="nom"&gt;Nom :&lt;/label&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="text" id="nom" name="nom"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;label for="email"&gt;Email :&lt;/label&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;input type="email" id="email" name="email"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;button type="submit"&gt;Envoyer&lt;/button&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/form&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/body&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;/html&gt;</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <img class="logodusite" src="../assets/images/my_logo.webp" alt="Logo du site">
+        <p>Pour me suivre sur les réseaux</p>
+        <ul class="sociaux">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/logo-facebook.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../assets/images/logo-twiter.png"
+                        alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/logo-youtube.png"
+                        alt="Youtube"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/logo-instagram.png"
+                        alt="Instagram"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

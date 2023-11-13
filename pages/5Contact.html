@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mainp5.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="../assets/images/my_logo.webp" alt="Logo du site">
+        <nav id="nav_bar">
+            <ul>
+                <li class="onglet_basic"><a href="/index.html">Accueil</a></li>
+                <!-- class="onglet_basic_active" a changer à chaque page-->
+                <li class="onglet_basic"><a href="./2HTMLExplique.html">HTML</a></li>
+                <li class="onglet_basic"><a href="./3CSSExplique.html">CSS</a></li>
+                <li class="onglet_basic"><a href="./4JSPHP.html">JS & PHP</a></li>
+                <li class="onglet_basic_active"><a href="./5Contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pour me Contacter</h1>
+
+        <h2>Formulaire</h2>
+        <form action="form.php"> <!-- form.php à créer pour l'envoi -->
+
+            <div class="label-input-group">
+                <label for="surname">Prénom</label>
+                <input type="text" id="surname" name="firstname" placeholder="Votre prénom">
+            </div>
+            <div class="label-input-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="lastname" placeholder="Votre nom">
+            </div>
+            <div class="label-input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Votre email">
+            </div>
+            <div class="label-input-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone">
+            </div>
+            <div class="label-input-group">
+                <label for="comment">Commentaire</label>
+                <textarea id="comment" name="comment" placeholder="Votre message ici"
+                    style="min-height:200px"></textarea>
+            </div>
+            <div class="label-input-group">
+                <label for="file">Documents</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <input type="submit" value="Envoyer">
+
+        </form>
+
+        <h2>Autres moyens de me contacter</h2>
+
+        <table>
+            <tr>
+                <td>&#x2706;</td>
+                <td> (+33)6 64 XX XX XX</td>
+            </tr>
+            <tr>
+                <td>&#128231;</td>
+                <td>valery.johann@exemple.com</td>
+            </tr>
+            <tr>
+                <td>&#9993;</td>
+                <td>22 Cunnery Rd, CF34 9TR, Maesteg, UK</td>
+            </tr>
+        </table>
+    </main>
+
+
+    <footer>
+        <img class="logodusite" src="../assets/images/my_logo.webp" alt="Logo du site">
+        <p>Pour me suivre sur les réseaux</p>
+        <ul class="sociaux">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/logo-facebook.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../assets/images/logo-twiter.png"
+                        alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/logo-youtube.png"
+                        alt="Youtube"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/logo-instagram.png"
+                        alt="Instagram"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

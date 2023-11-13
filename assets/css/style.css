@@ -1,0 +1,327 @@
+@font-face {
+    font-family: "Unbounded";
+    font-weight: normal;
+    src: url(/assets/fonts/Unbounded/Unbounded-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Unbounded";
+    font-weight: bold;
+    src: url(/assets/fonts/Unbounded/Unbounded-Bold.ttf);
+}
+
+* {
+    padding: 0;
+    border: 0;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+/* @media screen and (min-width: 768px) Code version pleine responsive */
+@media screen and (min-width: 830px) {
+    body {
+        background-image: url("../images/bg.webp");
+        /* background-image: url("../images/bg.webp"); */
+        /* background-image: url("../images/bg_lighter.webp"); */
+        font-family: "Unbounded";
+        font-size: 1.2rem;
+        letter-spacing: 3px;
+        color: white;
+    }
+
+    /* Header CSS Begin */
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: rgba(72, 71, 71);
+        position: sticky;
+        top: 0;
+    }
+
+    header img {
+        width: 80px;
+        height: auto;
+        padding: 10px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #nav_bar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #nav_bar ul li {
+        padding: 10px;
+    }
+
+    nav .onglet_basic_active a {
+        color: rgb(253, 29, 29);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+
+        /*Empêche le retour à la ligne*/
+    }
+
+    nav li {
+        transition: transform 0.5s ease;
+    }
+
+    nav li:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    /* Header CSS End */
+
+    /* Main CSS Begin */
+
+    main {
+        padding: 10px 0 200px 0;
+        background-color: rgba(72, 71, 71, 0.718);
+        min-height: 1vh;
+        min-width: 1vh;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        border: 2px solid red;
+        padding: 3px;
+        font-size: large;
+        text-align: center;
+    }
+
+    li {font-size: 1.2rem;}
+
+    /* Main CSS End */
+
+    /* Footer CSS Begin */
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: rgb(72, 71, 71);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer img {
+        width: 50px;
+        height: auto;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+        transition: transform 0.5s ease;
+    }
+
+    footer ul li {
+        padding: 10px;
+        color: white;
+    }
+
+    footer ul li:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}
+
+/* Footer CSS End */
+
+/* @media screen and (max-width: 768px) Code version réduite responsive */
+
+@media screen and (max-width: 830px) {
+    body {
+        background-image: url("../images/bg_lighter.webp");
+        /* background-image: url("../images/bg.webp"); Choose 1*/
+        /* background-image: url("../images/bg_lighter.webp"); Choose 1*/
+        font-family: "Unbounded";
+        font-size: 0.6rem;
+        letter-spacing: 3px;
+        color: white;
+    }
+
+    /* Header CSS Begin */
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(72, 71, 71);
+        position: sticky;
+        top: 0;
+    }
+
+    header img {
+        width: 60px;
+        height: auto;
+        padding: 5px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    #nav_bar ul {
+        list-style-type: none;
+        padding-bottom: 0.5%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav_bar ul li {
+        padding: 2px;
+    }
+
+    nav .onglet_basic_active a {
+        color: rgb(253, 29, 29);
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        white-space: nowrap;
+
+        /*Empêche le retour à la ligne*/
+    }
+
+    nav li {
+        transition: transform 0.5s ease;
+    }
+
+    nav li:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    /* Header CSS End */
+
+    /* Main CSS Begin */
+    main {
+        padding: 10px 0 200px 0;
+        background-color: rgba(72, 71, 71, 0.718);
+        min-height: 1vh;
+        min-width: 1vh;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        border: 2px solid red;
+        padding: 3px;
+        font-size: large;
+    }
+
+    h3 {
+        border: 2px solid red;
+        padding: 3px;
+        font-size: large;
+    }
+
+    /* Main CSS End */
+
+    /* Footer CSS Begin */
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: rgb(72, 71, 71);
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+
+    footer img {
+        width: 50px;
+        height: auto;
+    }
+
+    footer ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 5px;
+        transition: transform 0.5s ease;
+    }
+
+    footer ul li {
+        padding: 5px;
+        color: white;
+    }
+
+    footer ul li:hover {
+        -ms-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+    footer p {
+        display: none;
+    }
+
+    footer p .logodusite {
+        margin-right: 3px;
+    }
+}
+
+/* Footer CSS End */

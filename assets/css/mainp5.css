@@ -1,0 +1,121 @@
+@media screen and (min-width: 830px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 20px;
+        background-color: grey;
+        margin-bottom: 20px;
+    }
+
+    .label-input-group {
+        /* Div contenant duo label et input */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    form input {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    textarea {
+        /*Empêche utilisateur de changer la taille de la zone de texte*/
+        resize: none;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table td {
+        border-collapse: collapse;
+        border: 1px solid red;
+    }
+
+    table tr td:first-child {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    table tr td:last-child {
+        font-size: 1rem;
+        text-align: right;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        padding: 20px;
+        background-color: grey;
+        margin-bottom: 20px;
+    }
+
+    .label-input-group {
+        /* Div contenant duo label et input */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    form label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    form input {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    textarea {
+        /*Empêche utilisateur de changer la taille de la zone de texte*/
+        resize: none;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table td {
+        border-collapse: collapse;
+        border: 1px solid red;
+    }
+
+    table tr td:first-child {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    table tr td:last-child {
+        font-size: 1rem;
+        text-align: right;
+        padding-left: 5px;
+    }
+}

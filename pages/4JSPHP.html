@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSPHP</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mainp4.css">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/images/my_logo.webp" alt="Logo du site">
+        <nav id="nav_bar">
+            <ul>
+                <li class="onglet_basic"><a href="/index.html">Accueil</a></li>
+                <!-- class="onglet_basic_active" a changer à chaque page-->
+                <li class="onglet_basic"><a href="./2HTMLExplique.html">HTML</a></li>
+                <li class="onglet_basic"><a href="./3CSSExplique.html">CSS</a></li>
+                <li class="onglet_basic_active"><a href="./4JSPHP.html">JS & PHP</a></li>
+                <li class="onglet_basic"><a href="./5Contact.html">Me Contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>JavaScript et PHP</h1>
+        <section>
+            <h2>Javascript</h2>
+            <article>
+                <h3>Kescecé le Javascript ?</h3>
+                <p>JavaScript est un langage de programmation qui permet d'implémenter des mécanismes complexes sur une
+                    page web. À chaque fois qu'une page web fait plus que simplement afficher du contenu statique —
+                    afficher du contenu mis à jour à des temps déterminés, des cartes interactives, des animations
+                    2D/3D, des menus vidéo défilants, ou autre, JavaScript a de bonnes chances d'être impliqué. C'est la
+                    troisième couche des technologies standards du web.</p>
+            </article>
+            <article>
+                <h3>Fonctionnement du JavaScript</h3>
+                <p>Le code JavaScript s'exécute dans le contexte d'une page HTML donnée. Ce code est destiné à ajouter
+                    du dynamisme à la page HTML en associant à des évènements des actions (des fonctions) JavaScript.
+                    Par exemple, on peut appeler une fonction JavaScript lors du survol par le curseur d'un élément
+                    particulier : </p>
+                <pre>&lt;p&gt;
+Attention, ne passez pas le curseur au dessus de
+&lt;strong&gt;
+&lt;span onmouseover="alert('Qu\'est-ce que je viens de dire ?!');">cet élément&lt;/span&gt; !
+&lt;/strong&gt;
+&lt;/p&gt;</pre>
+                <p>Dans la portion de code HTML précédent, on associe une action JavaScript à l'évènement "passer la
+                    souris au-dessus de" pour l'élément span. Un autre évènement très commun est "cliquer sur" qui peut
+                    être défini (on dirait plutôt associé) pour la plupart des éléments HTML, comme par exemple : </p>
+                <pre>&lt;p&gt;
+Et voici un panda :&lt;br/&gt;
+&lt;img onclick="alert('Le panda est un ursidé');" src="panda.jpg" alt="Panda"/&gt;
+&lt;/p&gt;</pre>
+                <p>Les évènements peuvent être très variés et ne pas correspondre à une action de l'utilisateur, comme
+                    par exemple :&lt;/p&gt;
+                <pre>&lt;body onload="alert('La page est chargée');"&gt;
+...
+&lt;/body&gt;</pre>
+                <p>Dans l'exemple précédent, l'alerte JavaScript sera exécutée immédiatement après le chargement de la
+                    page HTML correspondante. </p>
+            </article>
+        </section>
+        <section>
+            <h2>PHP</h2>
+            <article>
+                <h3>Le PHP, c'est quoi ?</h3>
+                <p>PHP: Hypertext Preprocessor, plus connu sous son sigle PHP (sigle auto-référentiel), est un langage
+                    de programmation libre, principalement utilisé pour produire des pages Web dynamiques via un
+                    serveur web51, mais pouvant également fonctionner comme n'importe quel langage interprété de façon
+                    locale. PHP est un langage impératif orienté objet.
+                    PHP a permis de créer un grand nombre de sites web célèbres, comme Facebook et Wikipédia53. Il est
+                    considéré comme une des bases de la création de sites web dits dynamiques mais également des
+                    applications web. </p>
+            </article>
+            <article>
+                <h3>Exemple d'utilisation du PHP</h3>
+                <p>Le code ci-dessous est HTML, avec un peu de PHP qui affiche la date locale avec la fonction strftime
+                    .
+                    Sans la directive Htaccess, ce code sera ignoré par le compilateur PHP et transmis intégralement au
+                    navigateur Web.</p>
+                <pre>&lt;html&gt;
+&lt;head> 
+&lt;title> Comment utiliser un code PHP dans une page HTML &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+Bonjour LWS, aujourd'hui c'est le &lt;?php setlocale (LC_TIME, 'fr_FR.utf8','fra'); echo (strftime("%A %d %B %Y")) ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <img class="logodusite" src="../assets/images/my_logo.webp" alt="Logo du site">
+        <p>Pour me suivre sur les réseaux</p>
+        <ul class="sociaux">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/logo-facebook.png"
+                        alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="../assets/images/logo-twiter.png"
+                        alt="Twitter"></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/logo-youtube.png"
+                        alt="Youtube"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/logo-instagram.png"
+                        alt="Instagram"></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
